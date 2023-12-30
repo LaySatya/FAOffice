@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>FA-Admin</title>
 </head>
 
@@ -34,7 +34,7 @@
         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
             <div class="logo">
-                <img src="./img/fa-logo.jpg" alt="">
+                <img src="../img/fa-logo.jpg" alt="">
             </div>
             <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Football Academy</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -70,7 +70,7 @@
                 ?>
 
                 <div class="pro" style="margin: .5rem 1rem;">
-                    <img src="./img/<?php echo $dataMan['Profile']; ?>" alt="">
+                    <img src="../img/<?php echo $dataMan['Profile']; ?>" alt="">
                 </div>
                 <label for="" style="margin: 1rem 1rem; font-size: 22px; font-weight: bold; color: white;">
                     <?php echo $dataMan['Name']; ?>
@@ -78,7 +78,7 @@
                 <?php
                 ?>
             </div>
-            <a href="./index.php">
+            <a href="../index.php">
                 <div class="player">
                     <h1>
                         <i class="fa-solid fa-right-from-bracket"></i> Logout

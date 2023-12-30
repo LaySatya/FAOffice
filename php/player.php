@@ -148,7 +148,7 @@ session_start();
                             <?php echo $dataSel['Position']; ?>
                         </td>
                         <td>
-                            <img src="./img/<?php echo $dataSel['Profile']; ?>" alt="" style="width: 2.5rem; height: 2.5rem; border-radius: 50%;">
+                            <img src="../img/<?php echo $dataSel['Profile']; ?>" alt="" style="width: 2.5rem; height: 2.5rem; border-radius: 50%;">
                         </td>
                         <td>
                             <a href="./IUD/update.php" class="btn btn-success" id="btnUpdate">Update</a>

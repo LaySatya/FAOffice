@@ -75,7 +75,7 @@ if (isset($_POST['btnLog'])) {
     $exe = $con->query($sql);
     while ($data = $exe->fetch_assoc()) {
         if ($username == $data['Username'] && $password == $data['Password']) {
-            header('location:main.php');
+            header('location:./php/main.php');
         } else if ($username != $data['Username'] && $password != $data['Password']) {
             $_SESSION['msg'] = "Incorrect username or password!";
         }
@@ -98,7 +98,7 @@ if (isset($_POST['btnLog'])) {
                 $exe = $con->query($sql);
                 $data = $exe->fetch_assoc();
                 if ($username == $data['Username'] && $password == $data['Password']) {
-                    header('location:main.php');
+                    header('location:./php/main.php');
                 } else if ($username != $data['Username'] && $password != $data['Password']) {
                     ?>
                         <div class="alert alert-danger" id="btnAlert" role="alert">
@@ -116,7 +116,7 @@ if (isset($_POST['btnLog'])) {
             <input type="text" name="username" class="form-control">
             <label for="">Password</label>
             <input type="text" name="password" class="form-control">
-            <a href="main.php?code=1"><button type="submit" value="Login" name="btnLog" class="btn btn-success form-control">Login</button></a>
+            <button type="submit" value="Login" name="btnLog" class="btn btn-success form-control">Login</button>
             <!-- <a href="./index.php?code=" type="submit" value="Login" name="btnLog" class="btn btn-success form-control">Login</a> -->
         </form>
     </div>
