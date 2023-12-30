@@ -1,0 +1,111 @@
+/* header FA Office */
+
+.container-fluid {
+    float: left;
+    background-image: url(../img/chrismast.png);
+}
+.FA {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fa1 {
+    font-size: 42px;
+    font-weight:bold;
+    color:white;
+    padding-bottom:10px;
+    animation: fa 12s  infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+@keyframes fa {
+    0%{
+        color: white;
+    }
+    20%{
+        color: red;
+    }
+    40%{
+        color: blue;
+    }
+    60%{
+        color: darkgoldenrod;
+    }
+    80%{
+        color: limegreen;
+    }
+    100%{
+        color: tomato;
+    }
+}
+
+
+/* nav-bar */
+
+#btnNav{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    width: 3rem;
+    z-index: 1;
+}
+.offcanvas{
+    width: 200px;
+}
+#offcanvasScrollingLabel{
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+}
+.offcanvas-header .logo{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: blue;
+}
+.offcanvas-header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.offcanvas-body{
+    width: 100%;
+}
+.offcanvas-body a{
+    text-decoration: none;
+    color: white;
+}
+.offcanvas-body .player h1{
+    font-size: 25px;
+    float: left;
+    margin-top: 1rem;
+    margin-left: 7rem;
+}
+.offcanvas-body .player{
+    width: 100%;
+    height: 4rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: lightblue;
+    border-radius: 15px;
+    transition: .5s;
+    margin-top: 10px;
+}
+.offcanvas-body .player:hover{
+    background-color: whitesmoke;
+}
+.offcanvas-body .player:hover h1{
+    color: #212121;
+}
+.offcanvas-body .player .pro{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: red;
+    float: left
+}
+.offcanvas-body .player .pro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
